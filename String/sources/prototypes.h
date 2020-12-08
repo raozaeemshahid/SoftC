@@ -1,0 +1,25 @@
+int CIsUpper(char c);
+int CIsLower(char c);
+int CIsAlpha(char c);
+char CToUpper(char c);
+char CToLower(char c);
+
+long SLen(string s);
+string SAssign(string source);
+string SReAssign(string previousStr, string source);
+string SSlice(string source, int startIndex, int endIndex);
+string SJoin(string S1, string S2);
+string input();
+void SReverse(string source);
+void STrim(string source, int startIndex, int endIndex);
+void STitle(string source);
+void SToUpper(string source);
+void SToLower(string source);
+void SCopy(string S1, string S2);
+int SIsUpper(string source);
+int SIsLower(string source);
+int SIsSame(string S1, string S2);
+int SFindCharFrom(string source, char c, int index);
+int SFindChar(string source, char c);
+int SFindStr(string source, string str);
+int SCountChar(string source, char c);
