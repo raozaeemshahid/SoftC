@@ -4,7 +4,20 @@ SoftC is a library for C/C++ built with 6500+ lines of code. It has a bunch of f
 
 ## Idea Behind SoftC
 
-You might be wondering why C? When i first started programming, C seems old and useless to me, but when i took CS50 Introduction to Computer Science, i learned about C, i study it more. I read a book (which i borrow from my uncle) “Waite Group’s Turbo C Programming For The PC and Turbo C++”  and i just fell in love with it. I already knew Python, JS, Dart, Php but C really impressed me with it’s power, performance,Memory Control, Pointers, freedom to allocate memory and many more. After that when i start C++, to be honest i didn’t like that (it’s personally it Didn’t mean that it’s bad at all, it has a large community and is very popular). Because i had to remember lots of things and i’m very bad at remembering, C Seems to much more simple, faster and it can do everything than any Other languages, it just requires more effort. So why not make something that makes C Easy to program. So here it is, Without any further due let’s Get right into it.
+You might be wondering why C? When I first started programming, C seems
+old and expired to me, but when I took CS50 Introduction to Computer Science on
+Edx by Harvard University, thanks to Prof David J. Malan that it was available for
+free, I learned about C. I read a book (which I borrow from my uncle) “Waite
+Group’s Turbo C Programming For The PC and Turbo C++” by Robert Lafore,
+and I just fell in love with it. I already knew Python, JavaScript, Dart, PHP but C
+impressed me with its power, performance, Memory Control, Pointers, freedom to
+allocate memory, and many more. After that when I start C++, to be honest, I
+didn’t like that (it didn’t mean that it’s bad at all, it has a large community and is
+very popular). it's Because I had to remember lots of things, understanding it's
+architecture is harder for me, C Seems pretty simple, faster, it only takes more
+effort. So why not make something that makes C Easy to program, first it was
+personal, then I decided to make this library free and share with everyone, so
+Without any further due let’s get right into it.
 
 ## How to Use?
 
