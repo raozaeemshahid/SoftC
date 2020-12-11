@@ -9,7 +9,6 @@ string SAssign(string source);
 string SReAssign(string previousStr, string source);
 string SSlice(string source, int startIndex, int endIndex);
 string SJoin(string S1, string S2);
-string input();
 void SReverse(string source);
 void STrim(string source, int startIndex, int endIndex);
 void STitle(string source);

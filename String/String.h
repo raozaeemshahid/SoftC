@@ -93,29 +93,6 @@ string SStrip(string source)
     return newString;
 }
 
-string input()
-{
-    vector CVector = InitVectorOfChar();
-    char c;
-    while ((c = getchar()) != '\n')
-    {
-        VAppendChar(CVector, c);
-    }
-
-    char* newS = malloc(CVector->size + 1);
-
-    int i = 0;
-    for (; i < CVector->size; i++)
-    {
-        newS[i] = VGetChar(CVector, i);
-    }
-    newS[i] = '\0';
-
-    VDelete(CVector);
-
-    return newS;
-}
-
 void SReverse(string source)
 {
     int size = SLen(source);
