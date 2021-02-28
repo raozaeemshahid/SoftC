@@ -884,6 +884,81 @@ int VPop(vector List)
 {
     if (List == NULL || List->size == 0)
         return 0;
+
+    if (List->size == 1)
+    {
+        void *thisPtr;
+        if (SIsSame(List->type, "char"))
+        {
+            thisPtr = List->firstNode.CharNode;
+            List->firstNode.CharNode = NULL;
+        }
+        else if (SIsSame(List->type, "short"))
+        {
+            thisPtr = List->firstNode.ShortNode;
+            List->firstNode.ShortNode = NULL;
+        }
+        else if (SIsSame(List->type, "int"))
+        {
+            thisPtr = List->firstNode.IntNode;
+            List->firstNode.IntNode = NULL;
+        }
+        else if (SIsSame(List->type, "long"))
+        {
+            thisPtr = List->firstNode.LongNode;
+            List->firstNode.LongNode = NULL;
+        }
+        else if (SIsSame(List->type, "long long"))
+        {
+            thisPtr = List->firstNode.LongLongNode;
+            List->firstNode.LongLongNode = NULL;
+        }
+        else if (SIsSame(List->type, "float"))
+        {
+            thisPtr = List->firstNode.FloatNode;
+            List->firstNode.FloatNode = NULL;
+        }
+        else if (SIsSame(List->type, "double"))
+        {
+            thisPtr = List->firstNode.DoubleNode;
+            List->firstNode.DoubleNode = NULL;
+            
+        }
+        else if (SIsSame(List->type, "long double"))
+        {
+            thisPtr = List->firstNode.LongDoubleNode;
+            List->firstNode.LongDoubleNode = NULL;
+        }
+        else if (SIsSame(List->type, "short"))
+        {
+            thisPtr = List->firstNode.ShortNode;
+            List->firstNode.ShortNode = NULL;
+        }
+        else if (SIsSame(List->type, "string"))
+        {
+            thisPtr = List->firstNode.StringNode;
+            List->firstNode.StringNode = NULL;
+        }
+        else if (SIsSame(List->type, "vector"))
+        {
+            thisPtr = List->firstNode.VectorNode;
+            List->firstNode.VectorNode = NULL;
+        }
+        else if (SIsSame(List->type, "list"))
+        {
+            thisPtr = List->firstNode.ListNode;
+            List->firstNode.ListNode = NULL;
+        }
+        else if (SIsSame(List->type, "dict"))
+        {
+            thisPtr = List->firstNode.DictNode;
+            List->firstNode.DictNode = NULL;
+        }
+        List->size--;
+
+        free(thisPtr);
+        return 0;
+    }
     else if (SIsSame(List->type, "char"))
     {
         CharNode *SecondLastPtr = VGetCharNode(List, List->size - 2);
@@ -1298,7 +1373,7 @@ int VRemoveItem(vector List, long index)
 {
     if (List == NULL || List->size == 0)
         return 0;
-    else if (index >= (List->size - 1))
+    else if (index >= (List->size - 1) || List->size == 1)
     {
         VPop(List);
         return 0;
